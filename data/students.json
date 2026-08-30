@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "name":"John Doe",
+        "major":"Computer Science"
+    },
+    {
+        "id":2,
+        "name":"Jane Smith",
+        "major":"Information Technology"
+    },  
+    {
+        "id":3,
+        "name":"Alice Johnson",
+        "major":"Software Engineering"
+    },
+    {
+        "id":4,
+        "name":"Bob Brown",
+        "major":"Cybersecurity"
+    },
+    {
+        "id":5,
+        "name":"Charlie Davis",
+        "major":"Data Science"
+    }
+]

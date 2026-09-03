@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f5f7fb;
+      color: #111827;
+    }
+
+    h1 {
+      color: #2563eb;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #2563eb;
+      color: white;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #2563eb;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1><%= title %></h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Major</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% students.forEach((student) => { %>
+        <tr>
+          <td><%= student.id %></td>
+          <td><%= student.name %></td>
+          <td><%= student.major %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <a href="/">Back to Home</a>
+</body>
+</html>

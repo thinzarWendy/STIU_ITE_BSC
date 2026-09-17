@@ -1,0 +1,26 @@
+{
+  "name": "database-backed-student-api",
+  "version": "1.0.0",
+  "description": "CSC220 Assignment 4 - Database-backed Student API with Mongoose and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "check": "node --check app.js && node --check config/db.js && node --check models/Student.js"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "mongodb",
+    "student-api"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

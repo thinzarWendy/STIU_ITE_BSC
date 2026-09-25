@@ -1,0 +1,21 @@
+{
+  "name": "week9-lab1-register-login-solution",
+  "version": "1.0.0",
+  "description": "CSC220 Week 9 Guided Lab 1 solution: Register and Login Endpoints",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "check": "node --check app.js && node --check config/db.js && node --check models/Student.js && node --check models/User.js && node --check controllers/studentController.js && node --check routes/students.js && node --check routes/auth.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

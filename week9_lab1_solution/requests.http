@@ -1,0 +1,52 @@
+### Home route
+GET http://localhost:3000/
+
+### Get all students
+GET http://localhost:3000/api/students
+
+### Create a student - expected status: 201 Created
+POST http://localhost:3000/api/students
+Content-Type: application/json
+
+{
+  "name": "Nora",
+  "major": "CS",
+  "score": 88
+}
+
+### Validation error - expected status: 400 Bad Request
+POST http://localhost:3000/api/students
+Content-Type: application/json
+
+{
+  "major": "IT",
+  "score": 75
+}
+
+### Get one student - replace PASTE_ID_HERE with a real _id
+GET http://localhost:3000/api/students/PASTE_ID_HERE
+
+### Invalid ID - expected status: 400 Bad Request
+GET http://localhost:3000/api/students/invalid-id
+
+### Update a student - replace PASTE_ID_HERE with a real _id
+PATCH http://localhost:3000/api/students/PASTE_ID_HERE
+Content-Type: application/json
+
+{
+  "score": 95
+}
+
+### Update validation error - expected status: 400 Bad Request
+PATCH http://localhost:3000/api/students/PASTE_ID_HERE
+Content-Type: application/json
+
+{
+  "score": 5000
+}
+
+### Delete a student - replace PASTE_ID_HERE with a real _id, expected status: 204 No Content
+DELETE http://localhost:3000/api/students/PASTE_ID_HERE
+
+### Wrong route - expected status: 404 Not Found
+GET http://localhost:3000/wrong-url

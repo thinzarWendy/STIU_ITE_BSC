@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.site-header {
+  padding: 32px 0 20px;
+  text-align: center;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.student-form input,
+.student-form button,
+.filter-button,
+.delete-button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.student-form button,
+.filter-button,
+.delete-button {
+  cursor: pointer;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.student-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #d8dee9;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.passed,
+.failed {
+  font-weight: bold;
+}
+
+.delete-button {
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .student-form {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
